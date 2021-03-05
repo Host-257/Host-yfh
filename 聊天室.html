@@ -1,0 +1,27 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>(30)班专用聊天室</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/chat.js"></script>
+</head>
+<body>
+<div id="skm_LockPane" class="LockOff"></div>
+
+<label>地址: </label><input type="text" id="Connection" />
+	
+<label>名字：</label><input type="text" id="txtName" value="zsion" />
+<button id='ToggleConnection' type="button" οnclick='ToggleConnectionClicked();'>连接</button>
+<form id="form1" runat="server">
+<ul id='LogContainer' class="container"></ul>
+</form>
+<div id='SendDataContainer'>
+<input type="text" id="DataToSend" />
+		<button id='SendData' type="button" οnclick='SendDataClicked();'>发送</button>
+	</div>
+</body>
+</html>
